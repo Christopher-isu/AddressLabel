@@ -50,7 +50,7 @@ Partial Class AddressLabelForm
         Me.DisplayButton.Location = New System.Drawing.Point(12, 239)
         Me.DisplayButton.Name = "DisplayButton"
         Me.DisplayButton.Size = New System.Drawing.Size(357, 92)
-        Me.DisplayButton.TabIndex = 0
+        Me.DisplayButton.TabIndex = 7
         Me.DisplayButton.Text = "Display Label"
         Me.DisplayButton.UseVisualStyleBackColor = True
         '
@@ -60,7 +60,7 @@ Partial Class AddressLabelForm
         Me.ClearButton.Location = New System.Drawing.Point(12, 346)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(163, 92)
-        Me.ClearButton.TabIndex = 0
+        Me.ClearButton.TabIndex = 8
         Me.ClearButton.Text = "Clear"
         Me.ClearButton.UseVisualStyleBackColor = True
         '
@@ -70,7 +70,7 @@ Partial Class AddressLabelForm
         Me.ExitButton.Location = New System.Drawing.Point(206, 346)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(163, 92)
-        Me.ExitButton.TabIndex = 0
+        Me.ExitButton.TabIndex = 9
         Me.ExitButton.Text = "Exit"
         Me.ExitButton.UseVisualStyleBackColor = True
         '
@@ -88,7 +88,7 @@ Partial Class AddressLabelForm
         Me.LastNameTextBox.Location = New System.Drawing.Point(108, 54)
         Me.LastNameTextBox.Name = "LastNameTextBox"
         Me.LastNameTextBox.Size = New System.Drawing.Size(243, 22)
-        Me.LastNameTextBox.TabIndex = 1
+        Me.LastNameTextBox.TabIndex = 2
         '
         'LastNameLabel
         '
@@ -104,7 +104,7 @@ Partial Class AddressLabelForm
         Me.StreetAddressTextBox.Location = New System.Drawing.Point(108, 82)
         Me.StreetAddressTextBox.Name = "StreetAddressTextBox"
         Me.StreetAddressTextBox.Size = New System.Drawing.Size(243, 22)
-        Me.StreetAddressTextBox.TabIndex = 1
+        Me.StreetAddressTextBox.TabIndex = 3
         '
         'StreetAddressLabel
         '
@@ -127,7 +127,7 @@ Partial Class AddressLabelForm
         Me.CityTextBox.Location = New System.Drawing.Point(108, 110)
         Me.CityTextBox.Name = "CityTextBox"
         Me.CityTextBox.Size = New System.Drawing.Size(243, 22)
-        Me.CityTextBox.TabIndex = 1
+        Me.CityTextBox.TabIndex = 4
         '
         'CityTextLabel
         '
@@ -143,7 +143,7 @@ Partial Class AddressLabelForm
         Me.StateTextBox.Location = New System.Drawing.Point(108, 138)
         Me.StateTextBox.Name = "StateTextBox"
         Me.StateTextBox.Size = New System.Drawing.Size(243, 22)
-        Me.StateTextBox.TabIndex = 1
+        Me.StateTextBox.TabIndex = 5
         '
         'StateLabel
         '
@@ -159,7 +159,7 @@ Partial Class AddressLabelForm
         Me.ZipTextBox.Location = New System.Drawing.Point(108, 166)
         Me.ZipTextBox.Name = "ZipTextBox"
         Me.ZipTextBox.Size = New System.Drawing.Size(243, 22)
-        Me.ZipTextBox.TabIndex = 1
+        Me.ZipTextBox.TabIndex = 6
         '
         'ZipCodeLabel
         '
@@ -211,7 +211,7 @@ Partial Class AddressLabelForm
         Me.DisplayLabel.TabIndex = 0
         Me.DisplayLabel.Text = " "
         '
-        'AddressLabel
+        'AddressLabelForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -221,7 +221,7 @@ Partial Class AddressLabelForm
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.DisplayButton)
-        Me.Name = "AddressLabel"
+        Me.Name = "AddressLabelForm"
         Me.Text = "Address Label Form"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
