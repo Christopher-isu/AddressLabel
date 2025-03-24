@@ -73,11 +73,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddressLabel.vb">
+    <Compile Include="AddressLabelForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddressLabel.Designer.vb">
-      <DependentUpon>AddressLabel.vb</DependentUpon>
+    <Compile Include="AddressLabelForm.Designer.vb">
+      <DependentUpon>AddressLabelForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -98,8 +98,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AddressLabel.resx">
-      <DependentUpon>AddressLabel.vb</DependentUpon>
+    <EmbeddedResource Include="AddressLabelForm.resx">
+      <DependentUpon>AddressLabelForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -4,7 +4,7 @@
 'Adress Label
 'https://github.com/Christopher-isu/AddressLabel.git
 
-Public Class AddressLabel
+Public Class AddressLabelForm
     Private Sub DisplayButton_Click(sender As Object, e As EventArgs) Handles DisplayButton.Click
         ' Concatenate First and Last Name
         Dim fullName As String = FirstNameTextBox.Text & " " & LastNameTextBox.Text
