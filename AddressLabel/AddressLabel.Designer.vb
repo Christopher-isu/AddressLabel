@@ -222,7 +222,7 @@ Partial Class AddressLabel
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.DisplayButton)
         Me.Name = "AddressLabel"
-        Me.Text = "Form1"
+        Me.Text = "Address Label Form"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.OutputGroupBox.ResumeLayout(False)
