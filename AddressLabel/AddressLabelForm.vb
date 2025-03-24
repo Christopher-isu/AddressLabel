@@ -87,6 +87,7 @@ Public Class AddressLabelForm
     End Sub
 
     Private Sub AddressLabelForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load ' When the form loads
+        FirstNameTextBox.Focus() ' Set focus to the first name textbox
         Dim toolTip As New ToolTip() ' Create a new tooltip
         toolTip.ShowAlways = True ' Show the tooltip even if the form is not active
 
