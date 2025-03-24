@@ -13,20 +13,25 @@ Imports System.Text.RegularExpressions
 Public Class AddressLabelForm
     Private Sub DisplayButton_Click(sender As Object, e As EventArgs) Handles DisplayButton.Click
         ' Validate inputs and show error messages
-        Dim validationResult As String = ValidateInputs() ' Get error messages from validation
-        If Not String.IsNullOrEmpty(validationResult) Then ' If there are any error messages
-            MessageBox.Show(validationResult, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error) ' Show error messages
-            Return
-        End If
+        Try
+            Dim validationResult As String = ValidateInputs() ' Get error messages from validation
+            If Not String.IsNullOrEmpty(validationResult) Then ' If there are any error messages
+                MessageBox.Show(validationResult, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error) ' Show error messages
+                Return
+            End If
 
-        ' Concatenate First and Last Name
-        Dim fullName As String = FirstNameTextBox.Text & " " & LastNameTextBox.Text
-        ' Format address
-        Dim formattedAddress As String = fullName & Environment.NewLine & '
-                                          StreetAddressTextBox.Text & Environment.NewLine &
-                                          CityTextBox.Text & ", " & StateTextBox.Text & " " & ZipTextBox.Text
-        ' Display in label
-        DisplayLabel.Text = formattedAddress
+            ' Concatenate First and Last Name
+            Dim fullName As String = FirstNameTextBox.Text & " " & LastNameTextBox.Text
+            ' Format address
+            Dim formattedAddress As String = fullName & Environment.NewLine & '
+                                              StreetAddressTextBox.Text & Environment.NewLine &
+                                              CityTextBox.Text & ", " & StateTextBox.Text & " " & ZipTextBox.Text
+            ' Display in label
+            DisplayLabel.Text = formattedAddress
+        Catch ex As Exception
+            ' Handle unexpected errors
+            MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
     Private Function ValidateInputs() As String ' Returns error messages if any field did not pass validation
@@ -70,7 +75,7 @@ Public Class AddressLabelForm
         Return String.Join(Environment.NewLine, errorMessages)
     End Function
 
-    Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
+    Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click 'When the 'Clear' button is clicked
         ' Clear all fields
         FirstNameTextBox.Clear()
         LastNameTextBox.Clear()
